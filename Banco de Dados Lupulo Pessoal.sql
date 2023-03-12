@@ -22,3 +22,6 @@ cep VARCHAR(9),
 endereco VARCHAR(100),
 UF VARCHAR(9)
 );
+SELECT * FROM cadastro;
+ALTER TABLE cadastro MODIFY COLUMN idCadastro INT AUTO_INCREMENT;
+SELECT * FROM cadastro;
