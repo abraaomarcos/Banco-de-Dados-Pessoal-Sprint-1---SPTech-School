@@ -25,3 +25,16 @@ UF VARCHAR(9)
 SELECT * FROM cadastro;
 ALTER TABLE cadastro MODIFY COLUMN idCadastro INT AUTO_INCREMENT;
 SELECT * FROM cadastro;
+
+CREATE TABLE sensor(
+idSensor INT PRIMARY KEY AUTO_INCREMENT,
+serialNumber int,
+statusSensor VARCHAR(8) CHECK(statusSensor in('ativo', 'inativo') )
+);
+SELECT * FROM sensor;
+INSERT INTO sensor VALUES
+(DEFAULT, 202312, 'ativo'),
+(DEFAULT, 2023123, 'ativo'),
+(DEFAULT, 20231234, 'ativo');
+
+SELECT * FROM sensor;
